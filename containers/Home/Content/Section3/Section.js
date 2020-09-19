@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faClock, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Row, Col } from "antd";
+import { Row, Col, Pagination } from "antd";
 
 const Section = () => {
   return (
@@ -559,6 +559,10 @@ const Section = () => {
               </article>
             </Col>
           </Row>
+          <Row justify={'center'}>
+                <Pagination defaultCurrent={1} total={50} />
+          </Row>    
+        
         </div>
       </div>
     </SectionWrapper>
