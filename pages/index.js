@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 const Layout = dynamic({ loader: () => import('../containers/Layout') })
 const Home = dynamic({ loader: () => import('../containers/Home') })
 
